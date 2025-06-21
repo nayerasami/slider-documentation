@@ -3,6 +3,7 @@ import { ChangeDetectorRef, Component, ContentChild, ElementRef, HostListener, I
 import { ResponsiveConfig, SliderOptions, CustomSliderItems, } from './interfaces/sliderTypes';
 import { DomSanitizer } from '@angular/platform-browser';
 import Hammer from 'hammerjs';
+
 @Component({
   selector: 'app-slider',
   standalone: true,
