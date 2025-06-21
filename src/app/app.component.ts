@@ -13,7 +13,7 @@ import { CommonModule, Location } from '@angular/common';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements AfterViewInit {
-  title = 'reusable-slider';
+  title = 'Sleek Slider';
   constructor(public route: ActivatedRoute, private location: Location) { }
 
   ngAfterViewInit(): void {

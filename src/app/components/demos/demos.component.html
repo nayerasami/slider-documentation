@@ -3,11 +3,11 @@
   <div class="main-section">
     <h2 class="section-title">Single Item </h2>
     <div class="slider-element">
-      <app-slider [sliderOptions]="singleItemSliderOptions" [sliderItems]="singleItemSliderItems">
+      <sleek-slider [sliderOptions]="singleItemSliderOptions" [sliderItems]="singleItemSliderItems">
         <ng-template #itemTemplate let-item>
           <div class="text">{{ item.name }}</div>
         </ng-template>
-      </app-slider>
+      </sleek-slider>
     </div>
 
   </div>
@@ -16,11 +16,11 @@
   <div class="main-section">
     <h2 class="section-title">Multiple Items </h2>
     <div class="slider-element">
-      <app-slider [sliderOptions]="multipleItemSliderOptions" [sliderItems]="multipleItemsSliderItems">
+      <sleek-slider [sliderOptions]="multipleItemSliderOptions" [sliderItems]="multipleItemsSliderItems">
         <ng-template #itemTemplate let-item>
           <div class="text">{{ item.name }}</div>
         </ng-template>
-      </app-slider>
+      </sleek-slider>
     </div>
   </div>
 
@@ -28,12 +28,12 @@
   <div class="main-section">
     <h2 class="section-title">Responsive Display </h2>
     <div class="slider-element">
-      <app-slider [sliderOptions]="responsiveDisplaySliderOptions" [sliderItems]="responsiveDisplaySliderItems"
+      <sleek-slider [sliderOptions]="responsiveDisplaySliderOptions" [sliderItems]="responsiveDisplaySliderItems"
         [responsiveOptions]="responsiveOptions">
         <ng-template #itemTemplate let-item>
           <div class="text">{{ item.name }}</div>
         </ng-template>
-      </app-slider>
+      </sleek-slider>
     </div>
   </div>
 
@@ -41,11 +41,11 @@
   <div class="main-section">
     <h2 class="section-title">Autoplay </h2>
     <div class="slider-element">
-      <app-slider [sliderOptions]="autoplaySliderOptions" [sliderItems]="autoplaySliderItems" [responsiveOptions]="responsiveOptions">
+      <sleek-slider [sliderOptions]="autoplaySliderOptions" [sliderItems]="autoplaySliderItems" [responsiveOptions]="responsiveOptions">
         <ng-template #itemTemplate let-item>
           <div class="text">{{ item.name }}</div>
         </ng-template>
-      </app-slider>
+      </sleek-slider>
     </div>
   </div>
 
@@ -53,11 +53,11 @@
   <div class="main-section">
     <h2 class="section-title">Infinite scroll </h2>
     <div class="slider-element">
-      <app-slider [sliderOptions]="infiniteScrollSliderOptions" [sliderItems]="infiniteScrollSliderItems" [responsiveOptions]="responsiveOptions">
+      <sleek-slider [sliderOptions]="infiniteScrollSliderOptions" [sliderItems]="infiniteScrollSliderItems" [responsiveOptions]="responsiveOptions">
         <ng-template #itemTemplate let-item>
           <div class="text">{{ item.name }}</div>
         </ng-template>
-      </app-slider>
+      </sleek-slider>
     </div>
   </div>
 
@@ -65,11 +65,11 @@
   <div class="main-section">
     <h2 class="section-title">Multiple Rows </h2>
     <div class="slider-element">
-      <app-slider [sliderOptions]="multipleRowsSliderOptions" [sliderItems]="multipleRowsSliderItems" [responsiveOptions]="responsiveOptions">
+      <sleek-slider [sliderOptions]="multipleRowsSliderOptions" [sliderItems]="multipleRowsSliderItems" [responsiveOptions]="responsiveOptions">
         <ng-template #itemTemplate let-item>
           <div class="text">{{ item.name }}</div>
         </ng-template>
-      </app-slider>
+      </sleek-slider>
     </div>
   </div>
 
@@ -78,11 +78,11 @@
   <div class="main-section">
     <h2 class="section-title">Right to Left</h2>
     <div class="slider-element">
-      <app-slider [sliderOptions]="RTLSliderOptions" [sliderItems]="RTLSliderItems" [responsiveOptions]="responsiveOptions">
+      <sleek-slider [sliderOptions]="RTLSliderOptions" [sliderItems]="RTLSliderItems" [responsiveOptions]="responsiveOptions">
         <ng-template #itemTemplate let-item>
           <div class="text">{{ item.name }}</div>
         </ng-template>
-      </app-slider>
+      </sleek-slider>
     </div>
   </div>
 
@@ -90,11 +90,11 @@
  <div class="main-section">
     <h2 class="section-title">Custom Navigation Buttons </h2>
     <div class="slider-element">
-      <app-slider [sliderOptions]="customNavButtonsSliderOptions" [sliderItems]="customNavButtonsSliderItems" [responsiveOptions]="responsiveOptions">
+      <sleek-slider [sliderOptions]="customNavButtonsSliderOptions" [sliderItems]="customNavButtonsSliderItems" [responsiveOptions]="responsiveOptions">
         <ng-template #itemTemplate let-item>
           <div class="text">{{ item.name }}</div>
         </ng-template>
-      </app-slider>
+      </sleek-slider>
     </div>
   </div>
 

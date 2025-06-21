@@ -1,1 +1,28 @@
-<p>usage works!</p>
+<div class="container">
+    <ng-template #successfullyCopied let-toast="toast">
+        <div class="toast show {{ toast.classname }}">
+            <div class="toast-body">
+                {{ toast.text }}
+            </div>
+        </div>
+    </ng-template>
+    <div class="usage-section">
+        <h2 class="section-title">getting started</h2>
+        <p>First, update your package manager and install the package and its peer dependency, Hammer.js:</p>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-6 col-12">
+                <div class="command-block">
+                    <div class="command-header">
+                        <span>bash</span>
+                        <button class="copy-btn" (click)="copyCommand('cmd1', successfullyCopied)"
+                            ngbTooltip="copy command">Copy</button>
+                    </div>
+                    <div class="command-content" id="cmd1">
+                        <span class="prompt">$</span>npm i &#64;nayerasami/sleek-slider hammerjs
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

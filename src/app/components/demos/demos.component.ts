@@ -1,23 +1,22 @@
 import { Component } from '@angular/core';
-import { ResponsiveConfig, SliderOptions } from './../slider/interfaces/sliderTypes';
-import { SliderComponent } from '../slider/slider.component';
+import { SliderComponent } from '@nayerasami/sleek-slider';
 import { CommonModule } from '@angular/common';
 import { HearderComponent } from "../hearder/hearder.component";
 @Component({
   selector: 'app-demos',
-  imports: [SliderComponent],
+  imports: [SliderComponent, CommonModule],
   templateUrl: './demos.component.html',
   styleUrl: './demos.component.scss'
 })
 export class DemosComponent {
-  responsiveOptions: ResponsiveConfig[] = [
+  responsiveOptions: any[] = [
     { breakpoint: '1400px', numVisible: 3, numScroll: 2 },
     { breakpoint: '1199px', numVisible: 3, numScroll: 1 },
     { breakpoint: '767px', numVisible: 2, numScroll: 1 },
     { breakpoint: '575px', numVisible: 1, numScroll: 1 }
   ];
 
-  singleItemSliderOptions: SliderOptions = {
+  singleItemSliderOptions:any = {
     navButtons: true,
     autoplay: false,
     autoplaySpeed: 3000,
@@ -59,7 +58,7 @@ export class DemosComponent {
     { id: 12, name: 'slide 12' }
   ];
 
-  multipleItemSliderOptions: SliderOptions = {
+  multipleItemSliderOptions:any = {
     navButtons: true,
     autoplay: false,
     autoplaySpeed: 3000,
@@ -77,7 +76,7 @@ export class DemosComponent {
     // prevButton:'<div class="next">pre</div>'
   };
 
-  responsiveDisplaySliderOptions: SliderOptions = {
+  responsiveDisplaySliderOptions:any = {
     navButtons: true,
     autoplay: false,
     autoplaySpeed: 3000,
@@ -125,7 +124,7 @@ export class DemosComponent {
     { id: 12, name: 'slide 12' },
   ];
 
-  autoplaySliderOptions: SliderOptions = {
+  autoplaySliderOptions:any = {
     autoplay: true,
     autoplaySpeed: 3000,
     indicators: true,
@@ -152,7 +151,7 @@ export class DemosComponent {
 
   ];
 
-  infiniteScrollSliderOptions: SliderOptions = {
+  infiniteScrollSliderOptions:any = {
     navButtons: true,
     autoplay: false,
     autoplaySpeed: 3000,
@@ -188,7 +187,7 @@ export class DemosComponent {
   //  { id: 16, name: 'slide 16' },
   ];
 
-  multipleRowsSliderOptions: SliderOptions = {
+  multipleRowsSliderOptions:any = {
     navButtons: true,
     autoplay: false,
     autoplaySpeed: 3000,
@@ -216,7 +215,7 @@ export class DemosComponent {
 
   ];
 
-  RTLSliderOptions: SliderOptions = {
+  RTLSliderOptions:any = {
     navButtons: true,
     autoplay: false,
     autoplaySpeed: 3000,
