@@ -7,10 +7,9 @@ import { ToastService } from 'src/app/services/toast.service';
   standalone: true,
   imports: [NgbTooltipModule],
   templateUrl: './usage.component.html',
-  styleUrl: './usage.component.css'
+  styleUrl: './usage.component.css',
 })
 export class UsageComponent {
-
   constructor(public toastService: ToastService) {}
 
   copyCommand(elementId: string, template: TemplateRef<any>): void {
@@ -21,7 +20,7 @@ export class UsageComponent {
         template,
         classname: 'bg-danger text-light',
         delay: 5000,
-        text: 'Failed to copy: Command element not found.'
+        text: 'Failed to copy: Command element not found.',
       });
       return;
     }
@@ -41,7 +40,7 @@ export class UsageComponent {
             template,
             classname: 'bg-success text-light',
             delay: 5000,
-            text: 'Command copied to clipboard!'
+            text: 'Command copied to clipboard!',
           });
         },
         (err) => {
@@ -50,7 +49,7 @@ export class UsageComponent {
             template,
             classname: 'bg-danger text-light',
             delay: 5000,
-            text: 'Failed to copy command. Please copy manually.'
+            text: 'Failed to copy command. Please copy manually.',
           });
         }
       );
@@ -76,17 +75,50 @@ export class UsageComponent {
         template,
         classname: 'bg-success text-light',
         delay: 5000,
-        text: 'Command copied to clipboard!'
+        text: 'Command copied to clipboard!',
       });
-
     } catch (err) {
       console.error('Fallback copy failed:', err);
       this.toastService.show({
         template,
         classname: 'bg-danger text-light',
         delay: 5000,
-        text: 'Failed to copy command. Please copy manually.'
+        text: 'Failed to copy command. Please copy manually.',
       });
     }
   }
+
+sliderImportCode:string =`import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { SleekSliderModule } from '@nayerasami/sleek-slider';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, SleekSliderModule],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}`
+
+  sliderParentHtml: string = `<app-slider [sliderItems]="items" [sliderOptions]="options"
+  [responsiveOptions]="responsiveOptions">
+  <ng-template #itemTemplate let-item>
+    <div class="item"> {{ item }}</div>
+  </ng-template>
+</app-slider>`;
+sliderParentTS :string =`items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  
+  options = {
+    numberOfVisibleItems: 4,
+    rows: 2,
+    infiniteScroll: true,
+    stepSize: 1,
+    animationSpeed: '0.6s',
+    animation: 'linear'
+  };
+  
+  responsiveOptions = [
+    { breakpoint: '1024px', numVisible: 2, numScroll: 1 },
+    { breakpoint: '768px', numVisible: 1, numScroll: 1 }
+  ];`
 }
