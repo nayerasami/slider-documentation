@@ -1,0 +1,10 @@
+.sidebar {
+    background-color: #1e1e1e;
+}
+.sidebar nav a {
+    text-decoration: none;
+    color: white;
+}
+.sidebar nav a:hover {
+    color: pink;
+}

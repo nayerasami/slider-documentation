@@ -1,0 +1,15 @@
+<div class="container-fluid d-flex">
+  <!-- Sidebar -->
+  <aside class="sidebar p-3" style="width: 200px; min-height: 100vh;">
+    <nav class="d-flex flex-column gap-3">
+      <a routerLink="getting-start" class=" w-100 text-start">Getting start</a>
+      <a routerLink="api" class="w-100 text-start">API</a>
+      <a routerLink="examples" class="w-100 text-start">Examples</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content flex-grow-1 p-3">
+    <div id="content-placeholder"><router-outlet></router-outlet></div>
+  </main>
+</div>

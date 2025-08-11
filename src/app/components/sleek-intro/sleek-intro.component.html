@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="intro-title text-center p-5 my-5">
+            <h1 class="slider-title">Sleek Slider</h1>
+            <p class="slider-title">Clean. Fast. Sleek. Just how a slider should be</p>
+        </div>
+    </div>
+
+    <sleek-slider [sliderOptions]="singleItemSliderOptions" [sliderItems]="singleItemSliderItems">
+        <ng-template #itemTemplate let-item>
+            <div class="text">{{ item.name }}</div>
+        </ng-template>
+    </sleek-slider>
+
+    <div class="code-instructions my-5">
+        <pre class="text-start p-2"> 
+             <code [innerText]="sliderParentTS"></code>
+            </pre>
+    </div>
+</div>
