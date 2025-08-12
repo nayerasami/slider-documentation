@@ -1,14 +1,11 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { ActivatedRoute, Route, RouterOutlet } from '@angular/router';
 import { HearderComponent } from "./components/hearder/hearder.component";
-import { DemosComponent } from "./components/demos/demos.component";
-import { SettingsComponent } from "./components/settings/settings.component";
-import { UsageComponent } from "./components/usage/usage.component";
 import { CommonModule, Location } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HearderComponent, DemosComponent, SettingsComponent, UsageComponent, CommonModule],
+  imports: [RouterOutlet, HearderComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,10 +1,23 @@
 .sidebar {
-    background-color: #1e1e1e;
+  background-color: #1e1e1e;
 }
+
 .sidebar nav a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
+
 .sidebar nav a:hover {
-    color: pink;
+  color: pink;
+  background-color: black;
+}
+
+.sidebar nav a.active {
+  color: pink;
+  background-color: black;
+  font-weight: bold;
 }
