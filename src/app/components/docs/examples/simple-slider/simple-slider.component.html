@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="getting-start my-5">
+      <h1 class="section-title">Simple Slider</h1>
+    </div>
+    <div class="main-section">
+      <h3 class="my-4 mx-2">Single Item </h3>
+      <div class="slider-element">
+        <sleek-slider [sliderOptions]="singleItemSliderOptions" [sliderItems]="singleItemSliderItems">
+          <ng-template #itemTemplate let-item>
+            <div class="text">{{ item.name }}</div>
+          </ng-template>
+        </sleek-slider>
+      </div>
+
+      <div class="code-instructions my-5">
+        <pre class="text-start p-2">
+             <code [innerText]="sliderParentTS"></code>
+            </pre>
+      </div>
+
+    </div>
+
+  </div>
+</div>

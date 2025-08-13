@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-api',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './api.component.css'
 })
 export class ApiComponent {
+  constructor(public router : Router){}
   sliderOptions: any = [
     {
       property: 'Number of Visible items',

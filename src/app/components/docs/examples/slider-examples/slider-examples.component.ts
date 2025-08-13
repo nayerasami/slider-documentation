@@ -1,24 +1,16 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NavigationEnd, Router, RouterModule } from '@angular/router';
-import { filter } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-docs',
-  imports: [CommonModule, RouterModule],
-  templateUrl: './docs.component.html',
-  styleUrl: './docs.component.css'
+  selector: 'app-slider-examples',
+  imports: [],
+  templateUrl: './slider-examples.component.html',
+  styleUrl: './slider-examples.component.css'
 })
-export class DocsComponent {
+export class SliderExamplesComponent {
+  constructor(public router: Router) { }
 
-  isExamplesActive = false
-  constructor(public router: Router) {
 
-    this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe((event) => {
-      this.isExamplesActive = this.router.url.includes('/examples')
-    })
-
-  }
   sliderTypes = [
     { name: 'Simple Slider', url: 'simple-slider' },
     { name: 'Multiple Items Slider', url: 'muliple-slider' },
@@ -35,7 +27,4 @@ export class DocsComponent {
     { name: 'Multiple Rows Slider', url: 'muliple-rows' },
     { name: 'Responsive Display', url: 'responsive-display' },
   ]
-
-
-
 }

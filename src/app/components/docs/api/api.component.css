@@ -6,3 +6,19 @@
   font-size: 22px;
   font-weight: 600;
 }
+.skip-button{
+  border: 1px solid white;
+  color:white;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.skip-button:hover{
+  border: 1px solid pink;
+  color:pink;
+  padding: 16px;
+  border-radius: 8px;
+}
+.skip-button p {
+  font-weight: 600;
+}

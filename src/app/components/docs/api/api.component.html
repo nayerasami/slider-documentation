@@ -18,4 +18,19 @@
     </div>
   }
 </div>
+
+  <div class="row my-5">
+    <div class="col-md-6">
+      <div class="skip-button" (click)="router.navigate(['docs/getting-start'])" >
+        <p>previous</p>
+        <p ><i class="bi bi-arrow-left-short"></i> Getting Started</p>
+      </div>
+    </div>
+      <div class="col-md-6">
+      <div class="skip-button" (click)="router.navigate(['docs/examples'])" >
+        <p>next</p>
+        <p>Examples <i class="bi bi-arrow-right-short"></i></p>
+      </div>
+    </div>
+  </div>
 </div>

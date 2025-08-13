@@ -21,3 +21,15 @@
   background-color: black;
   font-weight: bold;
 }
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate-down {
+  transform: rotate(90deg);
+}
+
+.examples-sub-links{
+  color: white;
+  font-size: 14px;
+}

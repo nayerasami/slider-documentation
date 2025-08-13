@@ -1,12 +1,22 @@
-<div class="container-fluid d-flex">
-  <!-- Sidebar -->
-  <aside class="sidebar py-5" style="width: 200px; min-height: 100vh;">
-    <nav class="d-flex flex-column gap-3">
-      <a routerLink="getting-start" routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }"  class=" w-100 text-start">Getting start</a>
-      <a routerLink="api" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"  class="w-100 text-start">API</a>
-      <a routerLink="examples" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"  class="w-100 text-start">Examples</a>
-    </nav>
-  </aside>
+<div class=" d-flex">
+<!-- Sidebar -->
+<aside class="sidebar py-5" style="width: 200px; min-height: 100vh;">
+  <nav class="d-flex flex-column gap-3">
+    <a routerLink="getting-start" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="w-100 text-start"> Getting start </a>
+    <a routerLink="api" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="w-100 text-start">  API  </a>
+    <a routerLink="examples" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="w-100 d-flex justify-content-between align-items-center" >  Examples <i class="bi bi-caret-right arrow-icon" routerLinkActive="rotate-down"></i>  </a>
+
+ <div *ngIf="isExamplesActive" class="ps-3 d-flex flex-column gap-2">
+      <a *ngFor="let type of sliderTypes"
+         [routerLink]="['/docs/examples', type.url]"
+         routerLinkActive="active"
+         class="examples-sub-links">
+        {{ type.name }}
+      </a>
+    </div>
+  </nav>
+</aside>
+
 
   <!-- Main Content -->
   <main class="content flex-grow-1 p-3">

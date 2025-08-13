@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ToastService } from 'src/app/services/toast.service';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from '@nayerasami/sleek-slider';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-getting-start',
@@ -12,7 +13,7 @@ import { SliderComponent } from '@nayerasami/sleek-slider';
   styleUrls: ['./getting-start.component.css'] // Fixed styleUrl to styleUrls
 })
 export class GettingStartComponent {
-  constructor(public toastService: ToastService) {}
+  constructor(public toastService: ToastService , public router :Router ) {}
   copyCommand(elementId: string): void {
     const element = document.getElementById(elementId);
     if (!element) {
@@ -85,4 +86,6 @@ export class GettingStartComponent {
     { breakpoint: '768px', numVisible: 1, numScroll: 1 }
   ];
   }`;
+
+
 }
