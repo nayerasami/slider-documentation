@@ -20,40 +20,46 @@
 </div> -->
 
 <div class="slider-intro">
-    <div class="row start-intro">
-      <div class="col-md-6">
-        <div class="slider-title">
-          <h1>Sleek Slider</h1>
-          <p>Clean. Fast. Sleek. Just how a slider should be</p>
-          <button class="start-button btn">Get Started</button>
-        </div>
+  <div class="row start-intro">
+    <div class="col-md-6">
+      <div class="slider-title">
+        <h1>Sleek Slider</h1>
+        <p>Clean. Fast. Sleek. Just how a slider should be</p>
+        <button class="start-button btn" (click)="router.navigate(['docs/getting-start'])">Get Started</button>
       </div>
     </div>
+  </div>
 
-    <div class="row features-section p-5">
-      <div class="col-12 text-center">
-        <h2>Features</h2>
-        <p>Explore the amazing features of Sleek Slider.</p>
-        <div class="row d-flex justify-content-center align-content-center p-5">
-          <div class="col-md-4">
-            <div class="feature-item">
-              <i class="bi bi-check-circle-fill"></i>
-              <p>Responsive</p>
-            </div>
+  <div class="row features-section p-5">
+    <div class="col-12 text-center">
+      <h2>Features</h2>
+      <p>Explore the amazing features of Sleek Slider.</p>
+      <div class="row d-flex justify-content-center align-content-centerp-5">
+        <div class="col-md-4 feature-column">
+          <div class="feature-item">
+            <!-- <i class="bi bi-check-circle-fill"></i> -->
+            <img class="icon-img" src="assets/images/icons/responsive.svg" />
+            <h5>Fully Responsive & Touch-Enabled</h5>
+            <p>Auto-adapts to screen sizes with full swipe/gesture support via HammerJS.</p>
           </div>
-          <div class="col-md-4">
-            <div class="feature-item">
-              <i class="bi bi-check-circle-fill"></i>
-              <p>Customizable</p>
-            </div>
+        </div>
+        <div class="col-md-4 feature-column">
+          <div class="feature-item">
+            <img class="icon-img" src="assets/images/icons/optimization.svg" />
+            <h5>Customizable</h5>
+            <p>Custom buttons, indicators, animations, spacing, templates, and RTL support.</p>
           </div>
-          <div class="col-md-4">
-            <div class="feature-item">
-              <i class="bi bi-check-circle-fill"></i>
-              <p>Lightweight</p>
-            </div>
+        </div>
+        <div class="col-md-4 feature-column">
+          <div class="feature-item">
+            <img class="icon-img" src="assets/images/icons/solar-system.svg" />
+            <h5>Infinite Scroll</h5>
+            <p>Seamless looping experience with no visual jumps when reaching boundaries.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+</div>

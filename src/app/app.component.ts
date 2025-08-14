@@ -2,10 +2,11 @@ import { AfterViewInit, Component } from '@angular/core';
 import { ActivatedRoute, Route, RouterOutlet } from '@angular/router';
 import { HearderComponent } from "./components/hearder/hearder.component";
 import { CommonModule, Location } from '@angular/common';
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HearderComponent, CommonModule],
+  imports: [RouterOutlet, HearderComponent, CommonModule, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { DemosComponent } from './components/demos/demos.component';
 import { SleekIntroComponent } from './components/sleek-intro/sleek-intro.component';
 import { DocsComponent } from './components/docs/docs.component';
 import { GettingStartComponent } from './components/docs/getting-start/getting-start.component';
@@ -20,6 +19,7 @@ import { AnimationComponent } from './components/docs/examples/animation/animati
 import { SliderExamplesComponent } from './components/docs/examples/slider-examples/slider-examples.component';
 import { MultipleRowsComponent } from './components/docs/examples/multiple-rows/multiple-rows.component';
 import { ResponsiveDisplayComponent } from './components/docs/examples/responsive-display/responsive-display.component';
+
 
 export const routes: Routes = [
   { path: '', component: SleekIntroComponent, pathMatch: 'full' },
