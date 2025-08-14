@@ -1,37 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
 /* Global styles */
 * {
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Make sure html and body take full height */
+/* Ensure html and body take full height */
 html, body {
   height: 100%;
   background-color: rgb(37, 37, 37);
   color: white;
 }
+
+/* Light theme styles */
+.light-theme {
+  background-color: white;
+  color: darkmagenta;
+}
+
+.light-theme button {
+  background-color: darkmagenta;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Section title styles */
 .section-title {
   color: pink;
 }
+
+.light-theme .section-title {
+  color: darkmagenta;
+}
+
+/* Code block styles */
 pre {
   background-color: #1e1e1e;
   color: #dcdcdc;
-  /* padding: 1rem; */
   border-radius: 8px;
   overflow-x: auto;
   font-family: 'Fira Code', monospace;
   font-size: 0.9rem;
   line-height: 1.5;
-  /* margin: 1rem 0; */
   white-space: pre-wrap;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+}
 
+.light-theme pre {
+  background-color: #f5f5f5;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 code {
   display: block;
   white-space: pre;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #1e1e1e;
+}
+
+.light-theme .navbar {
+  background-color: #f5f5f5;
+}
+
+.navbar .nav-link {
+  color: white !important;
+}
+
+.light-theme .navbar .nav-link {
+  color: darkmagenta !important;
+}
+
+.navbar .nav-link.active {
+  color: pink !important;
+}
+
+.light-theme .navbar .nav-link.active {
+  color: darkmagenta !important;
+}
+
+.navbar-brand {
+  color: pink !important;
+}
+
+.light-theme .navbar-brand {
+  color: darkmagenta !important;
+}
+
+/* Footer styles */
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 1rem;
+}
+
+.light-theme footer {
+  background-color: #f5f5f5;
+  color: darkmagenta;
 }
