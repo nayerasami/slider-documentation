@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { SliderComponent } from '@nayerasami/sleek-slider';
+import { SleekSliderComponent } from 'sleek-slider';
+
 
 @Component({
   selector: 'app-height',
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   templateUrl: './height.component.html',
   styleUrl: './height.component.css'
 })
@@ -76,10 +77,11 @@ export class HeightComponent {
 
   ]
   sliderParentTS: string = `
-  import { SliderComponent } from '@nayerasami/sleek-slider';
+  import { SleekSliderComponent } from 'sleek-slider';
+
 
   @Component({
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   })
     responsiveOptions = [
     {

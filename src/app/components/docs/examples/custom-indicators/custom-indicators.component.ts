@@ -1,9 +1,10 @@
 import { Component, TemplateRef, ViewChild } from '@angular/core';
-import { SliderComponent } from '@nayerasami/sleek-slider';
+import { SleekSliderComponent } from 'sleek-slider';
+
 
 @Component({
   selector: 'app-custom-indicators',
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   templateUrl: './custom-indicators.component.html',
   styleUrl: './custom-indicators.component.css'
 })
@@ -35,10 +36,11 @@ export class CustomIndicatorsComponent {
     }
   }
   sliderParentTS: string = `
-  import { SliderComponent } from '@nayerasami/sleek-slider';
+  import { SleekSliderComponent } from 'sleek-slider';
+
 
   @Component({
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   })
 
   @ViewChild('sliderEl') sliderEl !:HTMLElement;

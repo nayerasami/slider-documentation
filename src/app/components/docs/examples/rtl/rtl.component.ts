@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { SliderComponent } from '@nayerasami/sleek-slider';
+import { SleekSliderComponent } from 'sleek-slider';
+
 
 @Component({
   selector: 'app-rtl',
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   templateUrl: './rtl.component.html',
   styleUrl: './rtl.component.css'
 })
@@ -38,10 +39,11 @@ export class RtlComponent {
 
   };
    sliderParentTS: string = `
-  import { SliderComponent } from '@nayerasami/sleek-slider';
+  import { SleekSliderComponent } from 'sleek-slider';
+
 
   @Component({
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   })
   items = [1, 2, 3, 4, 5, 6];
 

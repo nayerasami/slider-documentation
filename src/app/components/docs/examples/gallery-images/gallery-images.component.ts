@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { SliderComponent } from '@nayerasami/sleek-slider';
+import { SleekSliderComponent } from 'sleek-slider';
+
 
 @Component({
   selector: 'app-gallery-images',
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   templateUrl: './gallery-images.component.html',
   styleUrl: './gallery-images.component.css'
 })
@@ -80,10 +81,11 @@ export class GalleryImagesComponent {
 
   ];
     sliderParentTS: string = `
-  import { SliderComponent } from '@nayerasami/sleek-slider';
+  import { SleekSliderComponent } from 'sleek-slider';
+
 
   @Component({
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   })
 
   items =[

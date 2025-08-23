@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { SliderComponent } from '@nayerasami/sleek-slider';
+import { SleekSliderComponent } from 'sleek-slider';
+
 
 @Component({
   selector: 'app-multiple-slider',
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   templateUrl: './multiple-slider.component.html',
   styleUrl: './multiple-slider.component.css'
 })
@@ -22,10 +23,11 @@ export class MultipleSliderComponent {
   };
 
     sliderParentTS: string = `
-  import { SliderComponent } from '@nayerasami/sleek-slider';
+  import { SleekSliderComponent } from 'sleek-slider';
+
 
   @Component({
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   })
   items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 , 11 , 12, 13 ,14 ];
 

@@ -18,9 +18,9 @@
    align-items: center;
    background-color: black;
    background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3k4c2MwMWhta3RiZGl3Mjg4dHAxdDJleGNwa3Rnbm14dDN6NHBreSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gFhZjOtzoutSvckWPM/giphy.gif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
 
  }
 
@@ -42,29 +42,30 @@
  }
 
  .feature-column {
-  position: relative;
-  text-align: center;
-}
+   position: relative;
+   text-align: center;
+ }
 
-.feature-column:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 10%;
-  right: 0;
-  width: 1px;
-  height: 80%;
-  background-color: #000000;
-}
+ .feature-column:not(:last-child)::after {
+   content: "";
+   position: absolute;
+   top: 10%;
+   right: 0;
+   width: 1px;
+   height: 80%;
+   background-color: #000000;
+ }
 
-.feature-item i {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 10px;
-}
+ .feature-item i {
+   font-size: 2rem;
+   display: block;
+   margin-bottom: 10px;
+ }
 
-.features-section .col-12 {
-  padding: 0;
-}
+ .features-section .col-12 {
+   padding: 0;
+ }
+
  .slider-title {
    text-align: center;
  }
@@ -75,7 +76,7 @@
    padding: 10px 20px;
    border: none;
    border-radius: 5px;
-   font-size: 1.1rem;
+   font-size: 1rem;
    cursor: pointer;
    transition: background-color 0.3s;
  }
@@ -101,7 +102,7 @@
    }
 
    .slider-title h1 {
-     font-size: 2rem;
+     font-size: 1.1rem;
    }
 
    .features-section {
@@ -126,18 +127,18 @@
  .section-title {
    font-family: 'IBMPlexSansArabic-SemiBold', sans-serif;
    text-align: center;
-   font-size: 2.5rem;
+   font-size: 1.1rem;
  }
 
  @media (min-width: 992px) and (max-width: 1199.98px) {
    .section-title {
-     font-size: 2rem;
+     font-size: 1.1rem;
    }
  }
 
  @media (max-width: 991.98px) {
    .section-title {
-     font-size: 1.75rem;
+     font-size: 1rem;
    }
  }
 
@@ -147,7 +148,7 @@
 
  @media (max-width: 767.98px) {
    .section-desc {
-     font-size: 0.875rem;
+     font-size: 0.675rem;
    }
  }
 
@@ -164,7 +165,7 @@
    border-radius: 8px;
    overflow-x: auto;
    font-family: 'Fira Code', monospace;
-   font-size: 0.9rem;
+   font-size: 0.7rem;
    line-height: 1.5;
    white-space: pre-wrap;
    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -180,7 +181,8 @@
    color: black;
    padding: 8px 16px;
  }
- .icon-img{
-  width: 60px;
-  height: 60px;
+
+ .icon-img {
+   width: 60px;
+   height: 60px;
  }

@@ -21,11 +21,11 @@
           </div>
         </div>
       </div>
-      <sleek-slider [sliderOptions]="singleItemSliderOptions" [sliderItems]="singleItemSliderItems">
+      <sleek-slider  [sliderOptions]="singleItemSliderOptions" [sliderItems]="singleItemSliderItems">
         <ng-template #itemTemplate let-item>
-          <div class="text">{{ item.name }}</div>
+          <div class="text">{{ item }}</div>
         </ng-template>
-      </sleek-slider>
+      </sleek-slider >
 
       <div class="code-instructions my-5">
         <pre class="text-start p-2">

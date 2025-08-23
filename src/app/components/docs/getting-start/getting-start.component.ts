@@ -2,13 +2,14 @@ import { Component, TemplateRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToastService } from 'src/app/services/toast.service';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
-import { SliderComponent } from '@nayerasami/sleek-slider';
-import { Router } from '@angular/router';
+import { SliderComponent } from '../../shared/slider/slider.component';
+import { SleekSliderComponent } from 'sleek-slider';
 
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-getting-start',
   standalone: true, // Added to explicitly mark as standalone
-  imports: [CommonModule ,NgbTooltipModule ,SliderComponent], // Moved imports to decorator metadata
+  imports: [CommonModule ,NgbTooltipModule ,SleekSliderComponent ], // Moved imports to decorator metadata
   templateUrl: './getting-start.component.html',
   styleUrls: ['./getting-start.component.css'] // Fixed styleUrl to styleUrls
 })
@@ -63,10 +64,11 @@ export class GettingStartComponent {
   singleItemSliderItems = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   sliderParentTS: string = `
-  import { SliderComponent } from '@nayerasami/sleek-slider';
+  import { SleekSliderComponent } from 'sleek-slider';
+
 
   @Component({
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   })
   export class GettingStartComponent {
 

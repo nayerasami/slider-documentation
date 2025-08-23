@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { SliderComponent } from '@nayerasami/sleek-slider';
+import { SleekSliderComponent } from 'sleek-slider';
+
 
 @Component({
   selector: 'app-infinite-scroll',
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   templateUrl: './infinite-scroll.component.html',
   styleUrl: './infinite-scroll.component.css'
 })
@@ -37,10 +38,11 @@ export class InfiniteScrollComponent {
   };
 
   sliderParentTS: string = `
-  import { SliderComponent } from '@nayerasami/sleek-slider';
+  import { SleekSliderComponent } from 'sleek-slider';
+
 
   @Component({
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   })
   items = [1, 2, 3, 4, 5, 6];
 

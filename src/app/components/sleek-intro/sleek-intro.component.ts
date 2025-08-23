@@ -29,10 +29,11 @@ export class SleekIntroComponent {
   singleItemSliderItems = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   sliderParentTS: string = `
-  import { SliderComponent } from '@nayerasami/sleek-slider';
+  import { SleekSliderComponent } from 'sleek-slider';
+
 
   @Component({
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   })
   items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 

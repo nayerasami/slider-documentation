@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { SliderComponent } from '@nayerasami/sleek-slider';
+import { SleekSliderComponent } from 'sleek-slider';
+
 
 @Component({
   selector: 'app-animation',
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   templateUrl: './animation.component.html',
   styleUrl: './animation.component.css'
 })
@@ -23,10 +24,11 @@ export class AnimationComponent {
   };
 
   sliderParentTS: string = `
-  import { SliderComponent } from '@nayerasami/sleek-slider';
+  import { SleekSliderComponent } from 'sleek-slider';
+
 
   @Component({
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   })
 
   items = [1, 2, 3, 4, 5, 6, ];

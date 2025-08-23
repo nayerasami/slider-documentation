@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { SliderComponent } from '@nayerasami/sleek-slider';
+import { SleekSliderComponent } from 'sleek-slider';
+
 
 @Component({
   selector: 'app-custom-navigation-buttons',
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   templateUrl: './custom-navigation-buttons.component.html',
   styleUrl: './custom-navigation-buttons.component.css'
 })
@@ -28,10 +29,11 @@ export class CustomNavigationButtonsComponent {
   singleItemSliderItems = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   sliderParentTS: string = `
-  import { SliderComponent } from '@nayerasami/sleek-slider';
+  import { SleekSliderComponent } from 'sleek-slider';
+
 
   @Component({
-  imports: [SliderComponent],
+  imports: [SleekSliderComponent],
   })
   items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 

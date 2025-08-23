@@ -12,6 +12,9 @@ html, body {
   height: 100%;
   background-color: rgb(37, 37, 37);
   color: white;
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .section-title {
   color: pink;
