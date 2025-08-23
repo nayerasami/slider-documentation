@@ -19,6 +19,7 @@ import { AnimationComponent } from './components/docs/examples/animation/animati
 import { SliderExamplesComponent } from './components/docs/examples/slider-examples/slider-examples.component';
 import { MultipleRowsComponent } from './components/docs/examples/multiple-rows/multiple-rows.component';
 import { ResponsiveDisplayComponent } from './components/docs/examples/responsive-display/responsive-display.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 export const routes: Routes = [
@@ -51,7 +52,8 @@ export const routes: Routes = [
           { path: 'rtl', component: RtlComponent },
         ]
       }
-
     ],
   },
+  { path: '**', component: NotFoundComponent }
+
 ];
