@@ -20,6 +20,8 @@ export class MultipleSliderComponent {
     stepSize: 2,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    spaceBetween:16
+
   };
 
     sliderParentTS: string = `

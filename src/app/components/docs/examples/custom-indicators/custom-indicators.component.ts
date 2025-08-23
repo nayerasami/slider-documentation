@@ -26,6 +26,8 @@ export class CustomIndicatorsComponent {
     indicators: true,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    spaceBetween:16
+
   };
   customIndicatorsItems = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 

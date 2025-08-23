@@ -36,7 +36,9 @@ export class MultipleRowsComponent {
     stepSize: 2,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
-    rows: 2
+    rows: 2,
+    spaceBetween:16
+
   };
     responsiveOptions: any[] = [
     { breakpoint: '1400px', numVisible: 3, numScroll: 2 },

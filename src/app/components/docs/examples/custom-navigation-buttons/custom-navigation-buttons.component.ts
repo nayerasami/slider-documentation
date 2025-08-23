@@ -23,6 +23,8 @@ export class CustomNavigationButtonsComponent {
     indicators: true,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    spaceBetween:16
+
     // nextButton:'<img src="assets/images/icons/left-arrow.svg" width="25" height="24" alt="Icon" class=" filter-white img-flip" />',
     // prevButton:'<img src="assets/images/home/arrow-right.svg" width="25" height="24"  alt="Icon" class="filter-white img-flip" />'
   };
