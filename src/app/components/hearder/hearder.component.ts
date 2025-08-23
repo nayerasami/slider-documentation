@@ -1,12 +1,13 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, Renderer2 } from '@angular/core';
+import { Component, Inject, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-hearder',
   imports: [RouterModule],
   templateUrl: './hearder.component.html',
-  styleUrl: './hearder.component.css'
+  styleUrl: './hearder.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class HearderComponent {
   constructor(public router: Router,@Inject(DOCUMENT) private document: Document,private renderer: Renderer2) { }
