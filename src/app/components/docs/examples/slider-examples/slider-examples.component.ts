@@ -21,7 +21,7 @@ export class SliderExamplesComponent {
     { name: 'Animation', url: 'animation' },
     { name: 'Custom indicators', url: 'custom-indicators' },
     { name: 'Gallery Images Indicators', url: 'gallery-images' },
-    { name: 'Height', url: 'height' },
+    { name: 'Adaptive Height', url: 'height' },
     { name: 'Vertical Slider', url: 'vertical-slider' },
     { name: 'Custom Navigation Buttons', url: 'custom-navigation-buttons' },
     { name: 'Multiple Rows Slider', url: 'muliple-rows' },

@@ -11,7 +11,7 @@ import { AppRoutingModule } from "src/app/app-routing.module";
 export class ExamplesComponent {
   constructor(public router: Router) { }
 
-  
+
   sliderTypes = [
     { name: 'Simple Slider', url: 'simple-slider' },
     { name: 'Multiple Items Slider', url: 'muliple-slider' },
@@ -22,7 +22,7 @@ export class ExamplesComponent {
     { name: 'Animation', url: 'animation' },
     { name: 'Custom indicators', url: 'custom-indicators' },
     { name: 'Gallery Images Indicators', url: 'gallery-images' },
-    { name: 'Height', url: 'height' },
+    { name: 'Adaptive Height', url: 'height' },
     { name: 'Vertical Slider', url: 'vertical-slider' },
     { name: 'Custom Navigation Buttons', url: 'custom-navigation-buttons' },
     { name: 'Multiple Rows Slider', url: 'muliple-rows' },
