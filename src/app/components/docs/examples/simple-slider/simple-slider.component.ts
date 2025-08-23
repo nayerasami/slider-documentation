@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-simple-slider',
   imports: [SleekSliderComponent],
   templateUrl: './simple-slider.component.html',
-  styleUrl: './simple-slider.component.css'
+  styleUrl: './simple-slider.component.scss'
 })
 export class SimpleSliderComponent {
   responsiveOptions: any[] = [

@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-draggable',
   imports: [SleekSliderComponent],
   templateUrl: './draggable.component.html',
-  styleUrl: './draggable.component.css'
+  styleUrl: './draggable.component.scss'
 })
 export class DraggableComponent {
   multipleItemsSliderItems = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 , 11 , 12, 13 ,14 ];

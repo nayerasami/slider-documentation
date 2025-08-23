@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-rtl',
   imports: [SleekSliderComponent],
   templateUrl: './rtl.component.html',
-  styleUrl: './rtl.component.css'
+  styleUrl: './rtl.component.scss'
 })
 export class RtlComponent {
   responsiveOptions: any[] = [

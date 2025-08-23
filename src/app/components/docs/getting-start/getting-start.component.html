@@ -23,7 +23,7 @@
       </div>
       <sleek-slider  [sliderOptions]="singleItemSliderOptions" [sliderItems]="singleItemSliderItems">
         <ng-template #itemTemplate let-item>
-          <div class="text">{{ item }}</div>
+          <div class="slider-item">{{ item.name }}</div>
         </ng-template>
       </sleek-slider >
 

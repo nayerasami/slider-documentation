@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-vertical',
   imports: [SleekSliderComponent],
   templateUrl: './vertical.component.html',
-  styleUrl: './vertical.component.css'
+  styleUrl: './vertical.component.scss'
 })
 export class VerticalComponent {
   responsiveOptions = [

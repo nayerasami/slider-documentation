@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-gallery-images',
   imports: [SleekSliderComponent],
   templateUrl: './gallery-images.component.html',
-  styleUrl: './gallery-images.component.css'
+  styleUrl: './gallery-images.component.scss'
 })
 export class GalleryImagesComponent {
   responsiveOptions = [

@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-autoplay',
   imports: [SleekSliderComponent],
   templateUrl: './autoplay.component.html',
-  styleUrl: './autoplay.component.css'
+  styleUrl: './autoplay.component.scss'
 })
 export class AutoplayComponent {
   responsiveOptions: any[] = [

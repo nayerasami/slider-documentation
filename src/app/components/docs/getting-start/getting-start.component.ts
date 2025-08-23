@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   standalone: true, // Added to explicitly mark as standalone
   imports: [CommonModule ,NgbTooltipModule ,SleekSliderComponent ], // Moved imports to decorator metadata
   templateUrl: './getting-start.component.html',
-  styleUrls: ['./getting-start.component.css'] // Fixed styleUrl to styleUrls
+  styleUrls: ['./getting-start.component.scss'] // Fixed styleUrl to styleUrls
 })
 export class GettingStartComponent {
   constructor(public toastService: ToastService , public router :Router ) {}
@@ -59,6 +59,8 @@ export class GettingStartComponent {
     infiniteScroll: true,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    height:'220px',
+    spaceBetween:16
   };
 
   singleItemSliderItems = [1, 2, 3, 4, 5, 6, 7, 8, 9];

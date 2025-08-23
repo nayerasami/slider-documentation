@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-custom-navigation-buttons',
   imports: [SleekSliderComponent],
   templateUrl: './custom-navigation-buttons.component.html',
-  styleUrl: './custom-navigation-buttons.component.css'
+  styleUrl: './custom-navigation-buttons.component.scss'
 })
 export class CustomNavigationButtonsComponent {
   responsiveOptions: any[] = [

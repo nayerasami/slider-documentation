@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-multiple-rows',
   imports: [SleekSliderComponent],
   templateUrl: './multiple-rows.component.html',
-  styleUrl: './multiple-rows.component.css'
+  styleUrl: './multiple-rows.component.scss'
 })
 export class MultipleRowsComponent {
   multipleRowsSliderItems = [

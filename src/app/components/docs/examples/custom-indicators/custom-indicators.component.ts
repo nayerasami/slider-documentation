@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-custom-indicators',
   imports: [SleekSliderComponent],
   templateUrl: './custom-indicators.component.html',
-  styleUrl: './custom-indicators.component.css'
+  styleUrl: './custom-indicators.component.scss'
 })
 export class CustomIndicatorsComponent {
 @ViewChild('sliderEl') sliderEl !:HTMLElement;

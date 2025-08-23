@@ -12,7 +12,7 @@
     <div class="slider-element">
       <sleek-slider [sliderOptions]="multipleRowsSliderOptions" [sliderItems]="multipleRowsSliderItems" [responsiveOptions]="responsiveOptions">
         <ng-template #itemTemplate let-item>
-          <div class="text">{{ item.name }}</div>
+          <div class="slider-item">{{ item.name }}</div>
         </ng-template>
       </sleek-slider>
     </div>

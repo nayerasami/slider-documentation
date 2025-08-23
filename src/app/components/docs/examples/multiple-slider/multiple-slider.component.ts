@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-multiple-slider',
   imports: [SleekSliderComponent],
   templateUrl: './multiple-slider.component.html',
-  styleUrl: './multiple-slider.component.css'
+  styleUrl: './multiple-slider.component.scss'
 })
 export class MultipleSliderComponent {
   multipleItemsSliderItems = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 , 11 , 12, 13 ,14 ];

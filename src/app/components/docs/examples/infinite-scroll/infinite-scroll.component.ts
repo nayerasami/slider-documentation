@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-infinite-scroll',
   imports: [SleekSliderComponent],
   templateUrl: './infinite-scroll.component.html',
-  styleUrl: './infinite-scroll.component.css'
+  styleUrl: './infinite-scroll.component.scss'
 })
 export class InfiniteScrollComponent {
   responsiveOptions: any[] = [

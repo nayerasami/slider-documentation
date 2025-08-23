@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-height',
   imports: [SleekSliderComponent],
   templateUrl: './height.component.html',
-  styleUrl: './height.component.css'
+  styleUrl: './height.component.scss'
 })
 export class HeightComponent {
   responsiveOptions = [

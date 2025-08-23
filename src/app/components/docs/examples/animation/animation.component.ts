@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-animation',
   imports: [SleekSliderComponent],
   templateUrl: './animation.component.html',
-  styleUrl: './animation.component.css'
+  styleUrl: './animation.component.scss'
 })
 export class AnimationComponent {
   multipleItemsSliderItems = [1, 2, 3, 4, 5, 6, ];

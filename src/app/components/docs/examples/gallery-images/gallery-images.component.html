@@ -9,7 +9,7 @@
     <div class="slider-element">
       <sleek-slider [sliderOptions]="sliderOptions" [sliderItems]="sliderItems" [responsiveOptions]="responsiveOptions">
         <ng-template #itemTemplate let-item>
-          <div class="text">{{ item.name }}</div>
+          <img [src]="item" class="slider-image" alt="Gallery thumbnail"/>
         </ng-template>
       </sleek-slider>
     </div>
