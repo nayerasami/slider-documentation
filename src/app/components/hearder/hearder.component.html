@@ -1,15 +1,24 @@
-<nav class="navbar navbar-expand-lg  sticky-top">
-  <div class="container-fluid justify-content-center">
+<nav class="navbar navbar-expand-lg sticky-top ">
+  <div class="container-fluid d-flex align-items-center">
+    <a class="navbar-brand" href="#">Sleek Slider</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-      <div class="navbar-nav text-center">
-        <a class="nav-link active" [routerLink]="['/']" fragment="banner-section" [class.active]="router.url.includes('banner-section') ">Home</a>
-        <a class="nav-link active" [routerLink]="['/']" fragment="demos-section" [class.active]="router.url.includes('demos-section')">Demos</a>
-        <a class="nav-link" [routerLink]="['/']" fragment="usage-section" [class.active]="router.url.includes('usage-section')">Usage</a>
-        <a class="nav-link" [routerLink]="['/']" fragment="settings-section" [class.active]="router.url.includes('settings-section')">Settings</a>
+    <div class="collapse navbar-collapse d-flex justify-content-between align-items-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav d-flex align-items-center">
+        <!-- <a class="nav-link" href="#banner-section">Home</a> -->
+        <a class="nav-link" routerLink="docs">Docs</a>
+        <a class="nav-link" routerLink="docs/api">API</a>
+        <a class="nav-link" routerLink="docs/examples">Examples</a>
+      </div>
+      <div class="navbar-nav d-flex align-items-center">
+        <a class="nav-link" href="https://github.com/nayerasami/reusable-slider" target="_blank">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+        <a class="nav-link" href="#" id="theme-toggle" (click)="toggleTheme()">
+          <i class="bi bi-brightness-high"></i>
+        </a>
       </div>
     </div>
   </div>

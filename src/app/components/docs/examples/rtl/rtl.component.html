@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="getting-start my-5">
+      <h1 class="section-title">RTL</h1>
+    </div>
+
+    <div class="main-section">
+      <h3 class="my-4 mx-2">Right to Left</h3>
+      <div class="slider-element">
+        <sleek-slider [sliderOptions]="RTLSliderOptions" [sliderItems]="RTLSliderItems"
+          [responsiveOptions]="responsiveOptions">
+          <ng-template #itemTemplate let-item>
+            <div class="slider-item">{{ item.name }}</div>
+          </ng-template>
+        </sleek-slider>
+      </div>
+    </div>
+
+    <div class="code-instructions my-5">
+      <pre class="text-start p-2">
+             <code [innerText]="sliderParentTS"></code>
+            </pre>
+    </div>
+
+  </div>
+</div>

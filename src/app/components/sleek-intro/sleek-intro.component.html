@@ -1,0 +1,65 @@
+<!-- <div class="container">
+    <div class="row">
+        <div class="intro-title text-center p-5 my-5">
+            <h1 class="slider-title">Sleek Slider</h1>
+            <p class="slider-title">Clean. Fast. Sleek. Just how a slider should be</p>
+        </div>
+    </div>
+
+    <sleek-slider [sliderOptions]="singleItemSliderOptions" [sliderItems]="singleItemSliderItems">
+        <ng-template #itemTemplate let-item>
+            <div class="slider-item">{{ item.name }}</div>
+        </ng-template>
+    </sleek-slider>
+
+    <div class="code-instructions my-5">
+        <pre class="text-start p-2">
+             <code [innerText]="sliderParentTS"></code>
+            </pre>
+    </div>
+</div> -->
+
+<div class="slider-intro">
+  <div class="row start-intro">
+    <div class="col-md-6">
+      <div class="slider-title">
+        <h1>Sleek Slider</h1>
+        <p>Clean. Fast. Sleek. Just how a slider should be</p>
+        <button class="start-button btn" (click)="router.navigate(['docs/getting-start'])">Get Started</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row features-section p-5">
+    <div class="col-12 text-center">
+      <h2>Features</h2>
+      <p>Explore the amazing features of Sleek Slider.</p>
+      <div class="row d-flex justify-content-center align-content-centerp-5">
+        <div class="col-md-4 feature-column">
+          <div class="feature-item">
+            <!-- <i class="bi bi-check-circle-fill"></i> -->
+            <img class="icon-img" src="assets/images/icons/responsive.svg" />
+            <h5>Fully Responsive & Touch-Enabled</h5>
+            <p>Auto-adapts to screen sizes with full swipe/gesture support via HammerJS.</p>
+          </div>
+        </div>
+        <div class="col-md-4 feature-column">
+          <div class="feature-item">
+            <img class="icon-img" src="assets/images/icons/optimization.svg" />
+            <h5>Customizable</h5>
+            <p>Custom buttons, indicators, animations, spacing, templates, and RTL support.</p>
+          </div>
+        </div>
+        <div class="col-md-4 feature-column">
+          <div class="feature-item">
+            <img class="icon-img" src="assets/images/icons/solar-system.svg" />
+            <h5>Infinite Scroll</h5>
+            <p>Seamless looping experience with no visual jumps when reaching boundaries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

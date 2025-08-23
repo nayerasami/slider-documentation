@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+     <div class="getting-start my-5">
+    <h1 class="section-title">Custom Indicators</h1>
+    </div>
+
+   <div class="main-section">
+      <h3 class="my-4 mx-2">Slider Custom Indicators </h3>
+      <div class="slider-element">
+        <sleek-slider [sliderOptions]="customIndicatorsOptions" [sliderItems]="customIndicatorsItems" #sliderEl>
+          <ng-template #itemTemplate let-item>
+            <div class="slider-item">{{ item.name }}</div>
+            <ng-template #customIndicatorTemplate let-item let-index="index">
+            <div class="custom-indicator" [class.active-indicator]="sliderEl.getCurrentIndicator() === index" (click)="sliderEl.goToSlide(index)"></div>
+          </ng-template>
+          </ng-template>
+        </sleek-slider>
+      </div>
+
+      <div class="code-instructions my-5">
+        <pre class="text-start p-2">
+             <code [innerText]="sliderParentTS"></code>
+            </pre>
+      </div>
+
+    </div>
+  </div>
+</div>

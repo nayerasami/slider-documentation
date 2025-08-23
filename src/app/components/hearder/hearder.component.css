@@ -1,5 +1,5 @@
 .navbar{
-    background-color: rgb(37, 37, 37);
+      background-color: #1e1e1e; 
 
 }
 .navbar .nav-link {
@@ -8,4 +8,9 @@
 
 .navbar .nav-link.active {
   color: pink !important;
+}
+
+.navbar-brand{
+    color: pink !important;
+
 }
