@@ -65,7 +65,9 @@ export class MultipleRowsComponent {
     stepSize: 2,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
-    rows: 2
+    rows: 2,
+    spaceBetween:16
+
   };
 
 

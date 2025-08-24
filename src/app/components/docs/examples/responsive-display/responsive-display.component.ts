@@ -59,6 +59,8 @@ export class ResponsiveDisplayComponent {
     stepSize: 3,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    spaceBetween:16
+
   };
 
   responsiveOptions = [

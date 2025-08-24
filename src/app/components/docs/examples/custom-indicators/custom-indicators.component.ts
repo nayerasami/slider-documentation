@@ -56,6 +56,8 @@ export class CustomIndicatorsComponent {
     indicators: true,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    spaceBetween:16
+
   };
 
   responsiveOptions = [
