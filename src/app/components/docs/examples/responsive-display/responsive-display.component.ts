@@ -19,6 +19,8 @@ export class ResponsiveDisplayComponent {
     stepSize: 3,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    spaceBetween:16
+
   };
    responsiveDisplaySliderItems = [
     { id: 1, name: 'slide 1' },
@@ -58,6 +60,8 @@ export class ResponsiveDisplayComponent {
     stepSize: 3,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    spaceBetween:16
+
   };
 
   responsiveOptions = [

@@ -35,6 +35,8 @@ export class InfiniteScrollComponent {
     stepSize: 3,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    spaceBetween:16
+
   };
 
   sliderParentTS: string = `

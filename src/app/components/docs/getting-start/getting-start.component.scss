@@ -116,7 +116,6 @@ code {
   font-size: 26px;
   font-weight: 600;
   position: relative;
-  margin: 0 12px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -124,9 +123,8 @@ code {
   justify-content: center;
   border-radius: 12px;
   transition: all 0.3s ease;
-  
+
   &:hover {
-    transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     background: linear-gradient(135deg, #cc6677 0%, #ffc0cb 100%);
 
@@ -147,7 +145,7 @@ code {
   .container {
     padding: 10px;
   }
-  
+
   .slider-item {
     font-size: 1rem;
   }

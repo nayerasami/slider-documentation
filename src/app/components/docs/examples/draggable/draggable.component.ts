@@ -21,6 +21,8 @@ export class DraggableComponent {
     draggable:true,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    spaceBetween:16
+
   };
 
   sliderParentTS: string = `
@@ -43,6 +45,8 @@ export class DraggableComponent {
     draggable:true,
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
+    spaceBetween:16
+
   };
 
 
