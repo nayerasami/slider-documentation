@@ -57,8 +57,7 @@ export class HeightComponent {
       'https://doodleipsum.com/3000x2000/hand-drawn?bg=63C8D9&i=53f5643e46456031345f79c152ccef6e',
       'https://doodleipsum.com/3000x2000/hand-drawn?bg=63C8D9&i=11a3d171a97916c9ab34237c49fd3a8c',
       'https://doodleipsum.com/3000x2000/avatar?bg=63C8D9&i=0bdc1ecca366772a1c4b55232ef1e6c5'
-    ]
-
+    ],
   }
 
   sliderItems = [

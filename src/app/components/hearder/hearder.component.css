@@ -1,7 +1,8 @@
-.navbar{
-      background-color: #1e1e1e; 
+.navbar {
+  background-color: #1e1e1e;
 
 }
+
 .navbar .nav-link {
   color: white !important;
 }
@@ -10,7 +11,9 @@
   color: pink !important;
 }
 
-.navbar-brand{
-    color: pink !important;
-
+.navbar-brand {
+  color: pink !important;
+  font-family: "Tinos", serif !important;
+  font-weight: 400;
+  /* font-style: normal; */
 }

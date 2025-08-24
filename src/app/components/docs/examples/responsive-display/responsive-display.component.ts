@@ -6,7 +6,7 @@ import { SleekSliderComponent } from 'sleek-slider';
   selector: 'app-responsive-display',
   imports: [SleekSliderComponent],
   templateUrl: './responsive-display.component.html',
-  styleUrl: './responsive-display.component.css'
+  styleUrl: './responsive-display.component.scss'
 })
 export class ResponsiveDisplayComponent {
 
@@ -20,7 +20,6 @@ export class ResponsiveDisplayComponent {
     animation: 'ease-in-out',
     animationSpeed: '0.8s',
     spaceBetween:16
-
   };
    responsiveDisplaySliderItems = [
     { id: 1, name: 'slide 1' },
