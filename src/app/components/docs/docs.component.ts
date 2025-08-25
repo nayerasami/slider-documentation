@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter } from 'rxjs';
 
@@ -10,6 +10,7 @@ import { filter } from 'rxjs';
   styleUrl: './docs.component.css'
 })
 export class DocsComponent {
+  @ViewChild('sidebar', { static: false }) sidebar!: ElementRef<HTMLElement>;
 
   isExamplesActive = false
   constructor(public router: Router) {
@@ -34,8 +35,12 @@ export class DocsComponent {
     { name: 'Custom Navigation Buttons', url: 'custom-navigation-buttons' },
     { name: 'Multiple Rows Slider', url: 'muliple-rows' },
     { name: 'Responsive Display', url: 'responsive-display' },
-  ]
+  ];
 
-
+  toggleSidebar() {
+    const sidebarElement = this.sidebar.nativeElement;
+    sidebarElement.classList.toggle('collapsed');
+    sidebarElement.classList.toggle('expanded'); // For mobile view
+  }
 
 }

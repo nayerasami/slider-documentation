@@ -1,5 +1,37 @@
 .sidebar {
   background-color: #1e1e1e;
+  transition: width 0.3s ease; /* Smooth transition for collapsing */
+  position: relative;
+  overflow: hidden; /* Prevent content from overflowing when collapsed */
+}
+
+.sidebar.collapsed {
+  width: 50px; /* Collapsed width, enough for the toggle button */
+}
+
+.sidebar-content {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.collapsed .sidebar-content {
+  opacity: 0; /* Hide content when collapsed */
+  pointer-events: none; /* Disable interactions when collapsed */
+}
+
+.toggle-btn {
+  display: none; /* Hidden by default, shown when collapsed */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar.collapsed .toggle-btn {
+  display: block; /* Show toggle button when collapsed */
 }
 
 .sidebar nav a {
@@ -9,6 +41,9 @@
   display: block;
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
 }
 
 .sidebar nav a:hover {
@@ -21,6 +56,7 @@
   background-color: black;
   font-weight: bold;
 }
+
 .arrow-icon {
   transition: transform 0.3s ease;
 }
@@ -29,7 +65,38 @@
   transform: rotate(90deg);
 }
 
-.examples-sub-links{
+.examples-sub-links {
   color: white;
   font-size: 14px;
+  padding-left: 1rem; /* Consistent indentation */
+}
+
+/* Ensure main content adjusts when sidebar collapses */
+.content {
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed + .content {
+  margin-left: 50px; /* Match collapsed sidebar width */
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 50px; /* Collapsed by default on small screens */
+  }
+  .sidebar-content {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .toggle-btn {
+    display: block;
+  }
+  .sidebar.expanded {
+    width: 200px;
+  }
+  .sidebar.expanded .sidebar-content {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
