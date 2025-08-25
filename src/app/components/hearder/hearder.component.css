@@ -1,19 +1,63 @@
 .navbar {
   background-color: #1e1e1e;
-
-}
-
-.navbar .nav-link {
-  color: white !important;
-}
-
-.navbar .nav-link.active {
-  color: pink !important;
+  padding: 0.75rem 1rem; /* Adjusted padding for better spacing */
 }
 
 .navbar-brand {
   color: pink !important;
   font-family: "Tinos", serif !important;
   font-weight: 400;
-  /* font-style: normal; */
+  font-size: clamp(1.25rem, 3vw, 1.5rem); /* Responsive font size */
+  margin-right: 1.5rem; /* Space between brand and nav links */
+}
+
+.navbar .nav-link {
+  color: white !important;
+  font-size: clamp(0.875rem, 2.5vw, 1rem); /* Responsive font size */
+  padding: 0.5rem 0.75rem; /* Consistent padding for nav links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: pink !important; /* Hover effect matches active state */
+}
+
+.navbar-toggler {
+  border: none; /* Remove default border */
+  padding: 0.5rem; /* Adjust padding for better touch target */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* White icon for contrast */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 1rem 0; /* Add padding to collapsed menu */
+  }
+
+  .navbar-nav {
+    text-align: center; /* Center-align links in collapsed state */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.75rem 0; /* Vertical spacing for mobile */
+  }
+
+  .navbar-nav.ms-auto {
+    margin-top: 0.5rem; /* Space between left and right nav groups */
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: clamp(1rem, 2.5vw, 1.25rem); /* Smaller brand font */
+  }
+
+  .navbar .nav-link {
+    font-size: clamp(0.75rem, 2vw, 0.875rem); /* Smaller link font */
+  }
 }
